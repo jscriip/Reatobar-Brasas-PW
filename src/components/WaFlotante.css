@@ -1,0 +1,24 @@
+.btn-wa-flotante {
+  position: fixed; /* Lo clava a la pantalla */
+  bottom: 30px;   /* Distancia desde abajo */
+  right: 30px;    /* Distancia desde la derecha */
+  background-color: #25D366; /* Verde oficial */
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Círculo perfecto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem; /* Tamaño del ícono */
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 2000; /* Asegura que esté por encima del Header (que tiene 1000) */
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.btn-wa-flotante:hover {
+  transform: scale(1.1) rotate(5deg); /* Efecto de agrandado y ligera rotación */
+  background-color: #1ebe57; /* Un verde un poco más oscuro */
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.6);
+}
