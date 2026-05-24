@@ -1,3 +1,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+    margin: 0;
+    background-image: url('https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1965&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
