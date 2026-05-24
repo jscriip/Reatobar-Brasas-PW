@@ -1,0 +1,82 @@
+.contacto-seccion {
+  background-color: rgba(17, 17, 17, 0.90);/* Un negro aún más profundo para cerrar la página */
+  color: white;
+  padding: 80px 20px;
+}
+
+.contacto-contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.contacto-info h2, .contacto-redes h2 {
+  color: #ff4500;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.icono-contacto {
+  color: #ff4500;
+  font-size: 1.5rem;
+  margin-top: 5px; /* Baja un poquito el ícono para alinearlo con el texto */
+}
+
+.info-item p {
+  color: #cccccc;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.contacto-redes p {
+  color: #cccccc;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.iconos-redes {
+  display: flex;
+  gap: 20px;
+}
+
+.red-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 50%; /* Hace que el botón sea un círculo perfecto */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Efectos Hover (Al pasar el mouse) con los colores de las marcas */
+.red-btn.insta:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  transform: translateY(-5px) scale(1.1);
+}
+
+.red-btn.fb:hover {
+  background-color: #1877f2;
+  transform: translateY(-5px) scale(1.1);
+}
+
+.red-btn.wa:hover {
+  background-color: #25D366; /* Verde oficial de WhatsApp */
+  box-shadow: 0 0 10px rgba(37, 211, 102, 0.4); /* Una sombrita verde elegante */
+  transform: translateY(-5px) scale(1.1);
+}
